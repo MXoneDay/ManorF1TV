@@ -13,18 +13,18 @@
         <link rel="stylesheet" href="css/fontAwesome.css">
         <link rel="stylesheet" href="css/light-box.css">
         <link rel="stylesheet" href="css/templatemo-style.css">
-
-        <?php include "grandprix_data.php"?>
-        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kanit:200,500,600" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-
 <body>
-
     <nav>
-        <div class="logo"><a href="index.html">Manor F1 TV</a></div>
-</nav>
+        <div class="logo">
+            <a href="index.html">
+                Manor F1 TV
+            </a>
+        </div>
+    </nav>
 
     <div id="video-container">
         <div class="video-overlay"></div>
@@ -44,48 +44,45 @@
 
     <div class="full-screen-portfolio" id="portfolio">
         <div class="container-fluid">
-            <?
-            foreach ($grandprixs as $item) {
-            ?> 
+            <?php
+            $grandPrixData = json_decode(
+                file_get_contents(__DIR__ . '/grandprix_data.json')
+            );
+            foreach ($grandPrixData as $grandPix):
+            ?>
             <div class="col-md-4 col-sm-6">
-                            <div class="portfolio-item">
-                                <a href=<?echo $item[0];?>><div class="thumb">
-                                    <div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h1>Race <em><?echo $item[1];?></em></h1>
-                                            <p><?echo $item[2];?></p>
-                                        </div>
-                                    </div>
-                                    <div class="image">
-                                        <img src=<?echo $item[3];?>>
-                                    </div>
-                                </div></a>
+                <div class="portfolio-item">
+                    <a target="_blank" href=<?= $grandPix['url'] ?>>
+                        <div class="thumb">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <h1>Race <em><?= $grandPix['title'] ?></em></h1>
+                                    <p><?= $grandPix['subTitle'] ?></p>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="<?= $grandPix['image'] ?>" alt="<?= $grandPix['title'] ?> - <?= $grandPix['subTitle'] ?>">
                             </div>
                         </div>
-            <?
-            }
-            ?>
+                    </a>
+                </div>
+            </div>
+            <?php endforeach ?>
         </div>
     </div>
-
-
 
     <footer>
         <div class="container-fluid">
             <div class="col-md-12">
-              <p>Copyright &copy; 2019 MANOR F1 RACING | Designed by JORDI ZANDHUIS</p>
+              <p>Copyright &copy; 2019 MANOR F1 RACING | Designed by JORDI ZANDHUIS, <a href="https://github.com/NickvdMeij">NICK VAN DER MEIJ</a></p>
             </div>
         </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
     <script src="js/vendor/bootstrap.min.js"></script>
-    
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
-    
 </body>
 </html>
