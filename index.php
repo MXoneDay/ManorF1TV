@@ -1,88 +1,136 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  		<title>Manor F1 TV</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<html lang="en">
+  <?php include "./includes/header_info.php" ?>
+  <body>    
+    <!-- Hero section -->
+    <section id="hero" class="text-white tm-font-big tm-parallax">
+    <?php include "./includes/navbar.php" ?>
+      
+      <div class="text-center tm-hero-text-container">
+        <div class="tm-hero-text-container-inner">
+            <h2 class="tm-hero-title">Manor F1 Championship</h2>
+            <p class="tm-hero-subtitle">
+              F1 2019 Online Competition
+            </p>
+        </div>        
+      </div>
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/light-box.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
-        <link href="https://fonts.googleapis.com/css?family=Kanit:200,500,600" rel="stylesheet">
+      <div class="tm-next tm-intro-next">
+        <a href="#introduction" class="text-center tm-down-arrow-link">
+          <i class="fas fa-3x fa-caret-down tm-down-arrow"></i>
+        </a>
+      </div>      
+    </section>
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-<body>
-    <nav>
-        <div class="logo">
-            <a href="index.html">
-                Manor F1 TV
-            </a>
-        </div>
-    </nav>
-
-    <div id="video-container">
-        <div class="video-overlay"></div>
-        <div class="video-content">
-            <div class="inner">
-              <h1>Welcome to <em>Manor F1 TV</em></h1>
-              <p>With all the Manor F1 race replays and funniest moments</p>
-              <div class="scroll-icon">
-                <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="img/scroll-icon.png" alt=""></a>
-              </div>    
-            </div>
-        </div>
-        <video autoplay="" loop="" muted>
-        	<source src="loop.mp4" type="video/mp4" />
-        </video>
-    </div>
-
-    <div class="full-screen-portfolio" id="portfolio">
-        <div class="container-fluid">
-            <?php
-            $grandPrixData = json_decode(
-                file_get_contents(__DIR__ . '/grandprix_data.json')
-            );
-            foreach ($grandPrixData as $grandPix):
-            ?>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a target="_blank" href=<?= $grandPix['url'] ?>>
-                        <div class="thumb">
-                            <div class="hover-effect">
-                                <div class="hover-content">
-                                    <h1>Race <em><?= $grandPix['title'] ?></em></h1>
-                                    <p><?= $grandPix['subTitle'] ?></p>
-                                </div>
-                            </div>
-                            <div class="image">
-                                <img src="<?= $grandPix['image'] ?>" alt="<?= $grandPix['title'] ?> - <?= $grandPix['subTitle'] ?>">
-                            </div>
-                        </div>
-                    </a>
+    <section id="introduction" class="tm-section-pad-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="img/victory_rosberg.jpg" alt="Image" class="img-fluid tm-intro-img" />
+          </div>
+          <div class="col-lg-6">
+            <div class="tm-intro-text-container">
+                <h2 class="tm-text-primary mb-4 tm-section-title">Introductie</h2>
+                <p class="mb-4 tm-intro-text">
+                  Welkom bij Manor Racing F1. 
+                  Dit is een online championship in de game F1 2019. 
+                  Op deze website kun je van alles vinden, 
+                  zoals alle regels, highlight video's, statistieken en meer.
+                </p>
+                <p class="mb-5 tm-intro-text"></p>
+                <div class="tm-next">
+                  <a href="regels.php" class="tm-intro-text tm-btn-primary">Lees verder</a>
                 </div>
             </div>
-            <?php endforeach ?>
+          </div>
         </div>
-    </div>
 
-    <footer>
-        <div class="container-fluid">
-            <div class="col-md-12">
-              <p>Copyright &copy; 2019 MANOR F1 RACING | Designed by JORDI ZANDHUIS, <a href="https://github.com/NickvdMeij">NICK VAN DER MEIJ</a></p>
+        <div class="row tm-section-pad-top">
+          <div class="col-lg-4">
+            <i class="fas fa-4x text-center tm-icon"><img src="img/icons/on-time.png" height="80" width="80"/></i>
+            <h4 class="text-center tm-text-primary mb-4">Aanvang</h4>
+            <p>
+              De Grand Prix's zullen elke zondag om 20:30 plaats vinden. 
+              Wij verwachten van iedereen dat zij op deze racedagen op tijd aanwezig zijn.
+              Een kwartier voor aanvang maken wij een lobby aan en 
+              je hebt dan tot 20:30 om deze te joinen. 
+              Mocht je een keer afwezig zijn, dan kun je dat van te voren melden. 
+              Zo is de groep op de hoogte dat iemand iets later in de sessie komt. 
+              Mocht het voorkomen dat er veel mensen niet kunnen, 
+              denk aan bijvoorbeeld een nationale feestdag, dan kunnen we in overleg de race verplaatsen. 
+              Kan slechts een enkeling niet, dan is het jammer maar helaas: de race gaat dan gewoon door.
+            </p>
+          </div>
+        
+        <div class="col-lg-4 mt-5 mt-lg-0">
+          <i class="fas fa-4x text-center tm-icon"><img src="img/icons/to-late.png" height="80" width="80"/></i>
+          <h4 class="text-center tm-text-primary mb-4">Te laat</h4>
+          <p>
+            Ben je te laat? Dan kun je nog altijd de lobby joinen terwijl de vrije training al begonnen is. 
+            Ook kun je joinen voor aanvang van de kwalificatie. 
+            Ben je er pas zodra de kwalificatie al gaande is? 
+            Dan kun je je helaas niet meer kwalificeren. 
+            Je mag dan nog wel meedoen aan de race, maar je zult dan achteraan moeten starten. 
+            Join je pas terwijl de race al bezig is, dan zul je helaas vanaf de zijlijn moeten toe kijken. 
+            Tevens zullen wij bij de resultaten een DNS (Did not start) bij je naam plaatsen.
+          </p>
+        </div>
+        <div class="col-lg-4 mt-5 mt-lg-0">
+          <i class="fas fa-4x text-center tm-icon"><img src="img/icons/not-available.png" height="80" width="80"/></i>
+          <h4 class="text-center tm-text-primary mb-4">Afwezig</h4>
+          <p>
+            Als je besluit mee te racen met het kampioenschap, 
+            verwachten wij van je dat je er in principe alle 21 races bij zal zijn. 
+            Het kan natuurlijk zo zijn dat je een keertje verhinderd bent. 
+            Meld dit gelieve zo vroeg mogelijk. 
+            We willen graag uiterlijk zaterdag om 22:00 je afmelding ontvangen hebben, 
+            via een Discord DM. Doe je dit niet, betekent dit een strafpunt voor de eindstand. Mocht je nog niet zeker weten of je er (op tijd) zal zijn, 
+            meld dit dan ook vooral en licht even toe waarom. 
+            Dan kan er eventueel een uitzondering worden gemaakt (bijv. een iets latere race start).
+          </p>
+        </div>
+      </div>
+      <div class="container tm-container-gallery">
+          <div class="row tm-section-pad-top">
+              <div class="col-lg-4">
+                <i class="fas fa-4x text-center tm-icon"><img src="img/icons/cursing.png" height="80" width="80"/></i>
+                <h4 class="text-center tm-text-primary mb-4">Taalgebruik</h4>
+                <p>
+                  In het groepskanaal is het de bedoeling dat je niet gaat schelden met bepaalde woorden (zoals ziektes etc.).
+                  We willen het in de competie graag netjes houden. Mocht je dit toch regemaltig doen word je er op aangesproken en volgen er consequenties.
+                  Dit is alleen van toepassing in de groepschat, in je teamcall zijn jij en je teamate vrij om te zeggen wat jullie willen.
+                </p>
+              </div>
+            
+            <div class="col-lg-4 mt-5 mt-lg-0">
+              <i class="fas fa-4x text-center tm-icon"><img src="img/icons/highlights.png" height="80" width="80"/></i>
+              <h4 class="text-center tm-text-primary mb-4">Highlights</h4>
+              <p>
+                Lijkt het je leuk om je battles terug te zien in een race samenvatting? 
+                Stuur dan je opnames door naar Jordi. Wil je de samenvattingen kijken? 
+                Klik dan rechts bovenaan de site op Manor F1 TV!
+              </p>
             </div>
+            <div class="col-lg-4 mt-5 mt-lg-0">
+              <i class="fas fa-4x text-center tm-icon"><img src="img/icons/leaving.png" height="80" width="80"/></i>
+              <h4 class="text-center tm-text-primary mb-4">Seizoen Verlaten</h4>
+              <p>
+                Zoals eerder vermeld bestaat dit seizoen uit 21 races. 
+                Dat betekent 21 avonden die je zult besteden met F1 2019. 
+                Wij gaan ervan uit dat je op deze dagen geen andere activiteit inplant. 
+                Mocht er iets op je pad komen in de toekomst, denk aan nieuw werk, een toffe stage 
+                of sportactiviteiten, en dit ervoor zorgt dat je niet meer mee kunt racen, 
+                dan kun je jezelf afmelden en de reden doorgeven waarom je er mee stopt.
+              </p>
+              <br></br>
+              <br></br>
+              <br></br>
+          </div>
+        </section>         
         </div>
-    </footer>
+    </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-</body>
+    <?php include "./includes/footer.php"?>
+    <?php include "./includes/js_functions.php"?>
+  </body>
 </html>
