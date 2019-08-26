@@ -21,14 +21,6 @@ a:focus {
   outline: none;
 }
 
-.btn {
-  padding: 8px 32px;
-}
-
-.btn:hover {
-  background-color: #ced4da;
-}
-
 .tm-section-pad-top {
   padding-top: 135px;
 }
@@ -62,7 +54,6 @@ a:focus {
   z-index: 1000;
   transition: all 0.3s ease;
   background-color: black;
-  opacity: 0.4;
 }
 
 .tm-navbar.scroll {
@@ -77,9 +68,12 @@ a:focus {
   font-weight: bold;
 }
 
-.navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
   color: #3496d8;
+}
+
+.navbar-brand:hover {
+  color: #8f8f8f;
 }
 
 .tm-navbar.scroll .navbar-brand {
@@ -99,9 +93,12 @@ a:focus {
 }
 
 .tm-navbar.scroll .tm-nav-link:hover,
-.tm-navbar.scroll .tm-nav-link.current,
-.tm-nav-link:hover {
+.tm-navbar.scroll .tm-nav-link.current{
   color: #3496d8;
+}
+
+.tm-nav-link:hover {
+  color: #A3A3A3;
 }
 
 .navbar-toggler {
@@ -502,7 +499,56 @@ p {
 }
 
 /* Self added*/
+a {
+  color: #8f8f8f;
+  text-decoration: none;
+}
 
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #4D9AD4;
+	display: inline-block;
+}
+
+#day, #hour, #minute, #second{
+	padding: 15px;
+	border-radius: 3px;
+	background: #0A509E;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+.btn-sign_up {
+  font-family: Raleway-SemiBold;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid rgba(67,153,197);
+  border-radius: 40px;
+  background: rgba(67,153,197);
+  transition: all 0.3s ease 0s;
+}
+
+.btn-sign_up:hover {
+  color: #FFF;
+  background: rgba(67,153,197);
+  border: 2px solid rgba(67,153,197);
+}
 
 @media (min-width: 768px) {
   .tm-intro-text-container {

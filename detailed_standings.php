@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <?php include "./includes/header_info.php" ?>
-    <?php  
-        include "./includes/dbconnect.php";
-        
-        $standings  = file_get_contents('./includes/klassement_add_on/detailed_query.php');
+    <?php          
+        $standings  = file_get_contents('./includes/klassement/detailed/detailed_query.php');
                         
         $result = mysql_query($standings);
 
@@ -19,7 +17,7 @@
 
     <section id="introduction" class="tm-section-pad-top">
         <div class="container">
-            <?php include "./includes/klassement_add_on/uitslagen_header.php" ?>
+            <?php include "./includes/klassement/uitslagen_header.php" ?>
         </div>  
     </section>
 
@@ -61,7 +59,7 @@
                     echo "<tr>";
                     echo "<td>".$row["Nr"]."</td>";
                     echo "<td>".$row["Coureur"]."</td>";
-                    include './includes/klassement_add_on/detailed_table_loop.php';
+                    include './includes/klassement/detailed/detailed_table_loop.php';
                     echo "<td>".$row["Punten"]."</td>";
                     echo "</tr>";
                     }

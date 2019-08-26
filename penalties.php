@@ -11,28 +11,71 @@
             <div class="col-lg-12">
                 <h2 class="mb-4 tm-section-title">Penalties</h2>
                 <p class="mb-4 tm-intro-text">
-                    We willen allemaal graag competitief racen, maar het moet natuurlijk wel leuk en fair blijven. Om dat te bewerkstelligen zullen er soms penalty's moeten worden uitgedeeld. Doordat F1 games erom bekend staan dat multiplayer sessies flink chaotisch kunnen zijn op het gebied van penalty’s, zullen wij zelf situaties gaan beoordelen. Bij deze beoordelingen kunnen straffen gegeven worden of komen te vervallen.
+                    We willen allemaal graag competitief racen, maar het moet natuurlijk wel leuk en fair blijven.</br> 
+                    Om dat te bewerkstelligen zullen er soms penalty's moeten worden uitgedeeld.</br> 
+                    Doordat F1 games erom bekend staan dat multiplayer sessies flink chaotisch kunnen zijn op het gebied van penalty’s,</br> 
+                    zullen wij zelf situaties gaan beoordelen. Bij deze beoordelingen kunnen straffen gegeven worden of komen te vervallen.</br>
                 </p>
             </div>
             <div class="col-lg-12">
                 <p class="mb-4 tm-intro-text">
-                    Penalties kunnen alleen uitgedeeld worden als er beelden van zijn. Dit betekent dus dat je zelf je game moet opnemen, zodat een eventuele evaluatie kan volgen. Neem je je gameplay niet op, dan kan je hooguit nog het geluk hebben dat iemand anders voor of achter je beelden van het incident heeft, maar als dat niet zo is, dan kan de situatie gewoon niet eerlijk worden beoordeeld. Het is dus niet verplicht om je race te recorden, maar het is wel verstandig.
+                    Penalties kunnen alleen uitgedeeld worden als er beelden van zijn.</br> 
+                    Dit betekent dus dat je zelf je game moet opnemen, zodat een eventuele evaluatie kan volgen.</br> 
+                    Neem je jouw race niet op dan kan het zijn dat je er geen evalutatie kan komen (Dit werkt dus in jou nadeel).</br> 
+                    In sommige gevallen kan er dan nog beeld materiaal uit je race highlights gebruikt worden </br>
+                    of van een medecoreur die voor of achter jou rijd en de situatie heeft opgenomen. </br>
+                    Verder willen we aankaarten dat opnemen niet verplicht is, maar wel aangeraden word.</br>
                 </p>
             </div>
             <div class="col-lg-6"></div>
             <div class="col-lg-12">
-                <p class="mb-4 tm-intro-text">
-                    De race incidenten zullen aan het einde van een sessie beoordeeld worden door een drietal stewards: de FIA. Voor elke race worden 3 mensen tot FIA gekroond. Dit doen we zodat we race incidenten onpartijdig kunnen beoordelen. Als rijder A de voorvleugel van rijder B stuk rijdt, maar rijder A vindt dat hij van de track geforceerd wordt en hier niks aan kan doen, dan zullen de stewards beoordelen of iemand een penalty moet krijgen of dat de game juist gehandeld heeft en de persoon ongestraft het FIA-hokje mag verlaten. Er is bewust gekozen voor een drietal stewards, zodat niet iedereen zich ermee gaat bemoeien en het op een nette manier kan worden afgehandeld. Voor de penalty's komen wel een aantal richtlijnen, zodat het uitdelen van straffen op een consequente manier kan plaats vinden. Stel driver A krijgt een penalty in race 1 voor een actie. Dan kan het niet zo zijn dat driver B in race 2 voor een vergelijkbaar incident geen penalty krijgt of juist veel zwaarder wordt gestraft.
-                </p>
-            </div>
-            <div class="col-lg-12">
-                <p class="mb-5 tm-intro-text">
-                    Een penalty ontvangen is niet leuk, dat is voor iedereen hetzelfde. Hoe je hiermee omgaat is wel iets om op te letten. We willen namelijk niet dat we 6 races in het seizoen zitten en dat er mensen zijn afgehaakt omdat er een penalty aan ze gegeven is. Als er 3 mensen akkoord zijn over een penalty, dan betekent dit een penalty. Je kunt als rijder dit slechts accepteren. We willen graag duidelijk meedelen dat als je het kampioenschap vroegtijdig verlaat zonder geldige reden (zoals het niet eens zijn met een penalty), dan ben je helaas niet meer welkom om bij een volgend seizoen weer deel te nemen.
-                </p>
-            </div>
-            <div class="tm-next">
-                <a href="#regels" class="tm-intro-text tm-btn-primary">Bekijk Voorbeelden</a>
-            </div>
+                <h2 class="mb-4 tm-section-title">Fédération Internationale de l'Automobile (FIA)</h2>
+                    <p class="mb-4 tm-intro-text">
+                        De race incidenten zullen aan het einde van een sessie beoordeeld worden door een drietal stewards: De FIA </br>
+                        Dit doen we zodat we race incidenten onpartijdig kunnen beoordelen. </br>
+                        Dit betekent dat elke groep van aangewezen FIA leden één incident zal gaan beoordelen. </br>
+                        Dit zodat iedereen een kans krijgt om FIA te zijn en het bespaart een hoop tijd. </br>
+                    </p>
+                <h4 class="mb-4">FIA vereisten</h4>
+                    <p class="mb-4 tm-intro-text">
+                        Het enige vereiste om FIA te zijn is dat je na EST. 22:00 beschikbaar bent. </br>
+                        Wil je geen FIA zijn kun je dit melden bij Mark of Marco. </br>
+                    </p>
+                    
+                <h4 class="mb-4">Hoe werkt de FIA?</h4>
+                    <p class="mb-4 tm-intro-text">
+                        De FIA zal alle race incidenten van een race gaan beoordelen </br>
+                        Er zijn "richtlijnen" voor en we verwachten dat de FIA straffen uitdeelt die op hun plek zijn</br>
+                        De beelden voor de FIA komen "hier" te staan.</br>
+                    <p>
+                <h4 class="mb-4">Een Review aanvragen bij de FIA </h4>
+                    <p class="mb-4 tm-intro-text">
+                        <strong>Protocol :</strong></br>
+                        1) Plaats in de discord in Race_Reviews een bericht voor je review</br>
+                        2) Format : Crash (driver)</br>
+                        3) Vervolgens plaats je één reactie op het bericht in alfabetische volgorde.</br>
+                        4) Vervolgens upload je video van de crash (niet langer dan 30s).</br>
+                        5) Uploaden op "Google Drive -> F1 Penalty System -> Incident".</br>
+                        6) in het volgende Format : Race_Letter_naam .</br>
+                        <strong>Note:</strong> Heb je meerdere crashes of incidenten met 1 persoon upload ze dan wel in chronologische volgorde.</br>
+                        </br>
+                        Door dit Protocool aan te houden zal het nakijken voor de FIA veel sneller en makkelijker verlopen. </br>
+                        </br>
+                        <div class="tm-next">
+                            <a href="https://www.youtube.com/watch?v=n16AJA3z82k&feature=youtu.be" class="tm-intro-text tm-btn-primary">Bekijk Uitleg Video</a>
+                        </div>
+                    </p>
+                    </br>
+                <h2 class="mb-4 tm-section-title">Supervisior</h2>
+                    <p class="mb-5 tm-intro-text">
+                        Een Supervisior is er om correcties uitdelen om trent glitches (Penalties die uit het niets komen of nergens opslaan).</br>
+                        Marco Radelaar en Mark van der Molen zijn de enige twee supervisiors die alle races corrigeren waar nodig.</br>
+                        Correcties worden alleen toegepast als het ook daad werkelijk glitches zijn.</br>
+                        Dingen zoals een corner cutting penalty die zwaarder uitvalt dan je gewent bent </br>
+                        of meerdere warnings voor corner cutting zullen <strong>NIET</strong> gecorigeerd worden.</br>
+                        Voor elke baan is duidelijk of er met Strict of Regular word gereden.</br>
+                        Deze warnings en penalties zijn in onze ogen consistent en daarom zullen deze <strong>NIET</strong> gecorigeerd worden.</br>
+                    </p>
         </div>
     </section>
     </br></br></br></br>

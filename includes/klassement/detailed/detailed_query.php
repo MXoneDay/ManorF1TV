@@ -23,7 +23,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "Ridion") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "Ridion") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "Ridion") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "Ridion") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "Ridion") AS "Punten" 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -51,7 +51,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "DonkeyKonkey") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "DonkeyKonkey") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "DonkeyKonkey") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "DonkeyKonkey") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "DonkeyKonkey") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -79,7 +79,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "Dennis") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "Dennis") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "Dennis") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "Dennis") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "Dennis") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -107,7 +107,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "Pinguin") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "Pinguin") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "Pinguin") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "Pinguin") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "Pinguin") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -135,7 +135,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "Bikk3l") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "Bikk3l") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "Bikk3l") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "Bikk3l") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "Bikk3l") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -163,7 +163,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "Arris") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "Arris") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "Arris") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "Arris") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "Arris") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -191,7 +191,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "Heroism") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "Heroism") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "Heroism") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "Heroism") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "Heroism") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -219,7 +219,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "Battle On") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "Battle On") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "Battle On") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "Battle On") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "Battle On") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -247,7 +247,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "Jordiz64") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "Jordiz64") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "Jordiz64") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "Jordiz64") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "Jordiz64") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -275,7 +275,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "JurdeV") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "JurdeV") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "JurdeV") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "JurdeV") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "JurdeV") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -303,7 +303,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "Kyreria") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "Kyreria") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "Kyreria") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "Kyreria") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "Kyreria") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -331,7 +331,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "MOAB02") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "MOAB02") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "MOAB02") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "MOAB02") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "MOAB02") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -359,7 +359,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "Qumielo") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "Qumielo") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "Qumielo") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "Qumielo") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "Qumielo") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -387,7 +387,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "Rene9977") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "Rene9977") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "Rene9977") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "Rene9977") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "Rene9977") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -415,7 +415,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "Schapen") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "Schapen") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "Schapen") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "Schapen") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "Schapen") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -443,7 +443,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "TheDutchTorpedo") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "TheDutchTorpedo") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "TheDutchTorpedo") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "TheDutchTorpedo") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "TheDutchTorpedo") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -471,7 +471,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "TimToBeat") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "TimToBeat") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "TimToBeat") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "TimToBeat") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "TimToBeat") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -499,7 +499,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "Trivago") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "Trivago") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "Trivago") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "Trivago") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "Trivago") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -527,7 +527,7 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "Y_ram(NL)") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "Y_ram(NL)") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "Y_ram(NL)") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "Y_ram(NL)") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "Y_ram(NL)") AS Punten 
 FROM race_results
 UNION
 SELECT DISTINCT  
@@ -555,6 +555,6 @@ SELECT DISTINCT
             (SELECT plek  FROM race_results WHERE race_id = 20 AND driver = "Demigod") AS "BRA",
             (SELECT plek  FROM race_results WHERE race_id = 21 AND driver = "Demigod") AS "ABU",
             (SELECT SUM(plek) FROM race_results WHERE driver = "Demigod") AS TPVR,
-            (SELECT SUM(punten) FROM race_results WHERE driver LIKE "Demigod") AS Punten 
+            (SELECT SUM(snelste_ronde_punten+race_punten-straf_punten) FROM race_results WHERE driver LIKE "Demigod") AS Punten 
 FROM race_results
 ORDER BY Punten DESC, TPVR;

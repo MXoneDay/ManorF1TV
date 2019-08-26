@@ -1,7 +1,4 @@
 <script> 
-/* Make a var or load from db */
-var deadline = new Date("1 september, 2019 20:30:00").getTime(); 
-    
 var x = setInterval(function() { 
     
 var now = new Date().getTime(); 
@@ -33,7 +30,6 @@ if (seconds < 10) {
 
 if (t < 0) { 
         clearInterval(x); 
-        document.getElementById("demo").innerHTML = "Race Started"; 
         document.getElementById("day").innerHTML ='00'; 
         document.getElementById("hour").innerHTML ='00'; 
         document.getElementById("minute").innerHTML ='00' ;  

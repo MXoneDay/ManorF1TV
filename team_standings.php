@@ -2,8 +2,7 @@
 <html lang="en">
   <?php include "./includes/header_info.php" ?>
     <?php  
-        include "./includes/dbconnect.php";
-        $standings  = file_get_contents('./includes/klassement_add_on/team_standings_query.php');
+        $standings  = file_get_contents('./includes/klassement/team standings/team_standings_query.php');
         $result = mysql_query($standings);
 
         if (!$result) {
@@ -17,9 +16,9 @@
 
     <section id="introduction" class="tm-section-pad-top">
         <div class="container">
-            <?php include "./includes/klassement_add_on/uitslagen_header.php" ?>
+            <?php include "./includes/klassement/uitslagen_header.php" ?>
                 <div class="col-lg-12">
-                    <table class="table" id="demo">
+                    <table class="table">
                         <thead class="thead-dark">
                             <tr>
                             <th scope="col">Constructors</th>
@@ -41,7 +40,7 @@
             </div>
         </div>
     </section>
-
+    <br>   <!-- breaks the line to add a tiny bit of white space-->                
     <?php include "./includes/footer.php"?>
     <?php include "./includes/js_functions.php"?>
   </body>

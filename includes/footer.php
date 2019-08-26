@@ -25,7 +25,7 @@
           </a>              
         </div>
         <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-          <a href="https://docs.google.com/document/d/1LMgVZWLfgv5G2UoLnlVkP17WtknZCmqYE6C66WSKx9o/edit#" class="tm-contact-item-link">
+          <a href="https://drive.google.com/open?id=1BN-1YAxdvLEoynZLb2TnQOHG3lWY9tT7" class="tm-contact-item-link">
               <i class="fas fa-3x mr-4"><img src="img/icons/drive.png" height="60" width="60"/></i>
               <span class="mb-0">Drive</span>
           </a>              
@@ -34,7 +34,7 @@
   </div>
   <footer class="text-center small tm-footer">
       <p class="mb-0">
-        Copyright &copy; Manor Racing F1 Group,
+        Copyright &copy; Manor Racing Group,
       </p>
       <p>
         Design: <a rel="nofollow" href="https://github.com/MXoneDay" class="tm-footer-link">Mark van der Molen / </a>

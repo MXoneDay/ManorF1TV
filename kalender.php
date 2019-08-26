@@ -2,7 +2,6 @@
 <html lang="en">
   <?php include "./includes/header_info.php" ?>
     <?php  
-        include "./includes/dbconnect.php";
         $kalender  = "SELECT Race, DATE_FORMAT(datum, \"%e %M %Y\"), TIME_FORMAT(Tijd, \"%H %i\") FROM kalender";
         $result = mysql_query($kalender);
 
@@ -22,10 +21,14 @@
                     <h2 class="tm-text-primary mb-4 tm-section-title">Kalender F1 2019</h2>
                 </div>
                 <div class="col-lg-12">
-                    <h4 class="tm-text-primary mb-4 tm-section-title">
-                        <a href="https://docs.google.com/spreadsheets/d/1DcFxKq4HnK-oabswkdSrY2NzZyeF8J_UZgZqf2kPzBk/edit?usp=sharing">Aanmelden</a>
-                    </h4>
-                </div>
+                    <div class="tm-next">
+                        <a class="btn btn-sign_up" href="https://docs.google.com/spreadsheets/d/1DcFxKq4HnK-oabswkdSrY2NzZyeF8J_UZgZqf2kPzBk/edit?usp=sharing" role="button">
+                            Aanmelden
+                        </a>
+                    </div>
+                </div> 
+                <div class="col-lg-12">
+                    </br>
                 </div>
                 <div class="col-lg-12">
                     <table class="table" id="demo">

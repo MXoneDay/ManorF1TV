@@ -8,7 +8,7 @@
       
       <div class="text-center tm-hero-text-container">
         <div class="tm-hero-text-container-inner">
-            <h2 class="tm-hero-title">Manor F1 Championship</h2>
+            <h2 class="tm-hero-title">Manor Championship</h2>
             <p class="tm-hero-subtitle">
               F1 2019 Online Competition
             </p>
@@ -32,8 +32,8 @@
             <div class="tm-intro-text-container">
                 <h2 class="tm-text-primary mb-4 tm-section-title">Introductie</h2>
                 <p class="mb-4 tm-intro-text">
-                  Welkom bij Manor Racing F1. 
-                  Dit is een online championship in de game F1 2019. 
+                  Welkom bij het Manor Championship. 
+                  Dit is een online competitie in de game F1 2019. 
                   Op deze website kun je van alles vinden, 
                   zoals alle regels, highlight video's, statistieken en meer.
                 </p>
@@ -106,9 +106,12 @@
               <i class="fas fa-4x text-center tm-icon"><img src="img/icons/highlights.png" height="80" width="80"/></i>
               <h4 class="text-center tm-text-primary mb-4">Highlights</h4>
               <p>
-                Lijkt het je leuk om je battles terug te zien in een race samenvatting? 
-                Stuur dan je opnames door naar Jordi. Wil je de samenvattingen kijken? 
-                Klik dan rechts bovenaan de site op Manor F1 TV!
+                Lijkt het je leuk om je battles terug te zien in een race samenvatting?</br> 
+                Stuur dan je opnames door naar Jordi. </br>
+                Hulp nodig bij het opnemen bekijk</br>
+                de uitleg video van Jordi <a href="https://youtu.be/Mc3IOjllF2s"><strong> HIER </strong></a>.</br> 
+                Wil je de samenvattingen kijken? </br> 
+                Klik dan rechts bovenaan de site op Manor F1 TV!</br> 
               </p>
             </div>
             <div class="col-lg-4 mt-5 mt-lg-0">

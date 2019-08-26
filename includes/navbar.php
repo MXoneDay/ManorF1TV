@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
   <div class="container">   
     <div class="tm-next">
-        <a href="#hero" class="navbar-brand">Manor F1 Championship</a>
+        <a href="#" class="navbar-brand">Manor Championship</a>
     </div>            
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

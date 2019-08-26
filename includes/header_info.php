@@ -11,4 +11,5 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/test.css" />
     <link rel="icon" href="./img/icons/manor.ico">
+    <?php include "config.php" ?>
 </head>

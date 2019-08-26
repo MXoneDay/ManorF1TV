@@ -5,6 +5,28 @@
 <script src="js/bootstrap.min.js"></script> 
 <script>
 
+
+function result_info() {
+  var newLine = "\r\n"
+  var msg = "Je kunt de resultaten als volgt bekijken."
+  msg += newLine;
+  msg += "Je vult een race id in die gekoppeld staat aan een race.";
+  msg += newLine;
+  msg += "De race id's zijn gebaseerd op de kalender volgorde.";
+  msg += newLine;
+  msg += newLine;
+  msg += "Zoals :";
+  msg += newLine;
+  msg += "Australië = 1";
+  msg += newLine;
+  msg += "Bahrein = 2";
+  msg+= newLine;
+  msg += "China = 3";
+  msg+= newLine;
+  msg += "etc.";
+  alert(msg);
+}
+
 function getOffSet(){
   var _offset = 450;
   var windowHeight = window.innerHeight;
